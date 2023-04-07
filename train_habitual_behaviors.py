@@ -337,6 +337,8 @@ while global_step <= max_all_steps + 1:
         logPs.append(logP)
         klds.append(kld)
 
+        need_to_record_performance = False
+
         print("== Testing performance ==" + task_name + " - seed {}, global step {}, mean return {}, mean steps taken {}".format(
               seed, global_step_test, np.mean(test_return), np.mean(test_episode_length)))
 
