@@ -20,7 +20,7 @@ parser.add_argument('--verbose', type=float, default=0, help="Verbose")
 parser.add_argument('--seed', type=str, default='0', help="random seed")
 parser.add_argument('--gui', type=int, default=0, help="whether to show Pybullet GUI")
 
-parser.add_argument('--record_test', type=int, default=0, help="Record all testing epsiodes")
+parser.add_argument('--record_test', type=int, default=0, help="if True, record all testing epsiodes")
 
 # ----------- Network hyper-parameters ----------
 parser.add_argument('--z_size', type=int, default=2, help="Size of latent variable z")
@@ -339,7 +339,7 @@ while global_step <= max_all_steps + 1:
 
         need_to_record_performance = False
 
-        print("== Testing performance ==" + task_name + " - seed {}, global step {}, mean return {}, mean steps taken {}".format(
+        print("== Testing performance ==  " + task_name + " - seed {}, global step {}, mean return {}, mean steps taken {}".format(
               seed, global_step_test, np.mean(test_return), np.mean(test_episode_length)))
 
     # ------------------------- testing after training ------------------------
