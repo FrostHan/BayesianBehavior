@@ -1,5 +1,8 @@
 # Code for the Bayesian Behaviors framework
 
+Paper preprint at:
+https://arxiv.org/abs/2304.05008 
+
 credit: Dongqi Han
 
 ## How to use
